@@ -16,8 +16,9 @@ import os
 from supabase import create_client
 
 # Supabase credentials from environment variables
-SUPABASE_URL = os.environ["https://pgrriyugypdhxbitlpxj.supabase.co"]
-SUPABASE_KEY = os.environ["sb_publishable_UilILiYmWcbigfuMMLlwIw_u3rQZQoa"]
+
+SUPABASE_URL = os.environ["SUPABASE_URL"]
+SUPABASE_KEY = os.environ["SUPABASE_KEY"]
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 scrape_time = datetime.now().isoformat()
